@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         try {
             // 1. Realizar la solicitud de traducción
-            const response = await fetch('https://44.192.111.192/backend-exa/translate.php', {
+            const response = await fetch('http://44.192.111.192/backend-exa/translate.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
