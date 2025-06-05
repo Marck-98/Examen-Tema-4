@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa;
+    padding-bottom: 50px;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+#recordBtn i, #translateBtn i {
+    margin-right: 8px;
+}
+
+.spinner-border {
+    margin-right: 8px;
+}
+
+.table {
+    margin-top: 20px;
+}

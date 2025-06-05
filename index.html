@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor Multilingüe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Traductor Multilingüe</h1>
+        
+        <div class="card shadow-lg">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="sourceText" class="form-label">Texto en Español</label>
+                            <textarea class="form-control" id="sourceText" rows="5"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <button id="recordBtn" class="btn btn-primary">
+                                <i class="bi bi-mic"></i> Grabar Voz
+                            </button>
+                            <button id="clearBtn" class="btn btn-outline-secondary">
+                                <i class="bi bi-trash"></i> Limpiar
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="targetLanguage" class="form-label">Idioma de Destino</label>
+                            <select class="form-select" id="targetLanguage">
+                                <option value="en">Inglés</option>
+                                <option value="fr">Francés</option>
+                                <option value="de">Alemán</option>
+                                <option value="it">Italiano</option>
+                                <option value="pt">Portugués</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="translatedText" class="form-label">Texto Traducido</label>
+                            <textarea class="form-control" id="translatedText" rows="5" readonly></textarea>
+                        </div>
+                        <button id="translateBtn" class="btn btn-success w-100">
+                            <i class="bi bi-translate"></i> Traducir
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="mt-4" id="historySection" style="display: none;">
+                    <h5>Historial de Traducciones</h5>
+                    <div class="table-responsive">
+                        <table class="table table-striped" id="historyTable">
+                            <thead>
+                                <tr>
+                                    <th>Texto Original</th>
+                                    <th>Texto Traducido</th>
+                                    <th>Fecha/Hora</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
